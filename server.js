@@ -88,8 +88,8 @@ app.post('/search', (req, res) => {
 
 app.post('/getmovie', (req, res) => {
 	const movieToSearch =
-		req.body.queryResult && req.body.queryResult.parameters && req.body.queryResult.parameters.movie
-			? req.body.queryResult.parameters.movie
+		req.body.queryResult && req.body.queryResult.parameters && req.body.queryResult.parameters.Movie
+			? req.body.queryResult.parameters.Movie
 			: '';
 
 	const reqUrl = encodeURI(
